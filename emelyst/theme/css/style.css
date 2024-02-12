@@ -1,0 +1,560 @@
+@font-face {
+	src: url("../../assets/fonts/Emelyst_font.ttf");
+    font-family: emelyst;
+}
+@font-face {
+	src: url("../../assets/fonts/acherus-militant-1/Fonts/acherus_militant_1_-_bold.otf.otf");
+    font-family: acherus;
+    font-weight: bold;
+}
+body {
+    font-family: emelyst;
+    font-size: 0.95em;
+	color: grey;
+	margin: 0;
+	padding: 0;
+    background-color: #000;
+    min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+    font-family: emelyst;
+    color: #fff;
+}
+
+a {
+    font-family: emelyst;
+    color: #fff;
+}
+
+p{
+    font-family: emelyst;
+    color: #fff; 
+}
+#time{
+  color: #fff !important;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 25px;
+  font-weight: 600;
+}
+#teplota{
+  color: #fff !important;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 25px;
+  font-weight: 600;
+}
+#teplota div{
+  margin-left: 10px;
+  margin-top: 0px;
+}
+#vlhkost{
+  color: #fff !important;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 25px;
+  font-weight: 600;
+}
+#vlhkost div{
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.casti{
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8));
+    border-radius: 15px;
+}
+.casti h1{
+    font-size: 1.8em;
+}
+.btnYellow{
+    background-color: rgb(219, 199, 19)!important;
+    border: none;
+    box-shadow: 2px 1.5px 4px black; 
+}
+.btnBlue{
+    background-color: #34c1d3!important;
+    border: none;
+    box-shadow: 2px 1.5px 4px black; 
+}
+body .col-lg-10 .btn {
+  box-shadow: 2px 1.5px 4px black;
+}
+strong {
+    color: #34c1d3;
+}
+
+[v-cloak] {
+    display: none;
+}
+
+/* SIDEBARWRAP */
+
+a {
+    font-family: acherus !important;
+}
+#sideBarWrap .sideBarLogo img {
+    width: 170px;
+    padding-bottom: 7px;
+    border-bottom: 2px solid #fff;
+    margin-left: -5px;
+}
+#sideBarWrap li {
+    margin-bottom: 15px;
+}
+#sideBarWrap li a {
+    background-color: #fff;
+    color: #000;
+    font-family: acherus;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-decoration: none;
+    border-radius: 20px;
+    width: 180px;
+    display: block;
+    padding: 8px 0px 8px 12px;
+    background: linear-gradient(to right, #34c1d3 61%, #fff 50%);
+    background-size: 200%;
+    background-position: right bottom;
+    transition: all 0.3s ease-out;
+}
+#sideBarWrap li a:hover {
+    background-color: #34c1d3;
+    background-position: left bottom;
+}
+#sideBarWrap .active{
+    background: #34c1d3;
+}
+#sideBarWrap .tretie {
+    padding-bottom: 15px;
+    border-bottom: 3px solid #fff;
+}
+#sideBarWrap li a img {
+    width: 20px;
+    margin-right: 15px;
+}
+
+/* INFORMACIE */
+
+#infoObsah {
+    background-image: url("../images/bg.jpg");
+    min-height: 100vh;
+    background-size: cover;
+  }
+  #infoObsah .infoNadpis h1 {
+    font-weight: bold;
+    font-size: 3.5em;
+  }
+  #infoObsah .rodinaNadpis h2 {
+    font-weight: bold;
+    font-size: 2em;
+  }
+  #infoObsah .domInfo img {
+    width: 100%;
+  }
+  #infoObsah .zakladneInfo img {
+    height: 40px;
+  }
+  #infoObsah .zakladneInfo h3 {
+    font-size: 0.7em;
+  }
+  #infoObsah .casti ul {
+    list-style: none;
+  }
+  #infoObsah .casti ul li p {
+    font-size: 0.85em;
+    color: #fff;
+  }
+  #infoObsah .uzivatel img {
+    width: 50%;
+    border-radius: 50%;
+  }
+  #infoObsah .clenovia img{
+    height: 200px;
+  }
+  #infoObsah .clenovia p{
+    font-size: 1.5em;
+  }
+  #infoObsah .clenovia h2{
+    font-size: 2em;
+  }
+  @media only screen and (max-width: 600px) {
+    #infoObsah h1 {
+      font-size: 2em !important;
+    }
+    #infoObsah h2 {
+      font-size: 1.5em !important;
+    }
+  }
+  .highcharts-figure, .highcharts-data-table table {
+  min-width: 360px; 
+  max-width: 800px;
+  margin: 1em auto;
+}
+
+.highcharts-data-table table {
+	font-family: Verdana, sans-serif;
+	border-collapse: collapse;
+	border: 1px solid #EBEBEB;
+	margin: 10px auto;
+	text-align: center;
+	width: 100%;
+	max-width: 500px;
+}
+.highcharts-data-table caption {
+  padding: 1em 0;
+  font-size: 1.2em;
+  color: #555;
+}
+.highcharts-data-table th {
+	font-weight: 600;
+  padding: 0.5em;
+}
+.highcharts-data-table td, .highcharts-data-table th, .highcharts-data-table caption {
+  padding: 0.5em;
+}
+.highcharts-data-table thead tr, .highcharts-data-table tr:nth-child(even) {
+  background: #f8f8f8;
+}
+.highcharts-data-table tr:hover {
+  background: #f1f7ff;
+}
+
+  /* SVETLO */
+
+  #svetlaObsah {
+    background-image: url("../images/bg.jpg");
+    min-height: 100vh;
+    background-size: cover;
+  }
+  #svetlaObsah .svetlaNadpis h1 {
+    font-weight: bold;
+    font-size: 3.5em;
+    line-height: 30px;
+  }
+  #svetlaObsah .miestnostiSvetiel h3 {
+    font-size: 1.1em;
+  }
+  #svetlaObsah .img img {
+    height: 65px;
+  }
+
+  /* OCHRANA */
+
+  #ochranaObsah {
+    background-image: url("../images/bg.jpg");
+    min-height: 100vh;
+    background-size: cover;
+  }
+  #ochranaObsah .casti h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+  }
+  #ochranaObsah .casti h2 {
+    font-size: 2.2em;
+    font-weight: bold;
+  }
+  #ochranaObsah .casti p {
+    font-size: 1.2em;
+  }
+  #ochranaObsah .zabezpecenieIcons img {
+    height: 130px;
+  }
+  #ochranaObsah .prijazdovaCesta img {
+    height: 160px;
+  }
+  #ochranaObsah .vsetkyRolety button {
+    width: 100px;
+  }
+  #ochranaObsah .img img {
+    width: 70px;
+  }
+  #ochranaObsah .img {
+    height: 70px;
+  }
+  @media only screen and (max-width: 900px) {
+    #ochranaObsah h1 {
+      font-size: 1.8em !important;
+    }
+    #ochranaObsah h2{
+      font-size: 1.8em !important;
+    }
+    
+  }
+  @media only screen and (max-width: 380px) {
+    #cestaSvetlo p{
+      font-size: 0.8em !important;
+    }
+  }
+
+  /* KUCHYNA */
+
+  #kuchynaObsah {
+    background-image: url("../images/bg.jpg");
+    min-height: 100vh;
+    background-size: cover;
+  }
+  #kuchynaObsah h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+  }
+  #kuchynaObsah img {
+    height: 120px;
+  }
+  @media only screen and (max-width: 900px) {
+    #kuchynaObsah h1 {
+      font-size: 3em !important;
+    }
+    
+  }
+
+  /* OBYVACKA */
+
+  #obyvackaObsah {
+    background-image: url("../images/bg.jpg");
+    min-height: 100vh;
+    background-size: cover;
+  }
+  #obyvackaObsah h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+  }
+  #obyvackaObsah .img {
+    height: 120px;
+  }
+  @media only screen and (max-width: 900px) {
+    #obyvackaObsah h1 {
+      font-size: 3em !important;
+    }
+    
+  }
+
+  /* GARÁŽ */
+
+  #garazObsah {
+    background-image: url("../images/bg.jpg");
+    min-height: 100vh;
+    background-size: cover;
+  }
+  #garazObsah h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+  }
+  #garazObsah img {
+    height: 120px;
+  }
+  @media only screen and (max-width: 900px) {
+    #garazObsah h1 {
+      font-size: 3em !important;
+    }
+    
+  }
+
+  /* PRACOVŇA */
+
+  #pracovnaObsah {
+    background-image: url("../images/bg.jpg");
+    min-height: 100vh;
+    background-size: cover;
+  }
+  #pracovnaObsah h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+  }
+  #pracovnaObsah .img {
+    height: 120px;
+  }
+  @media only screen and (max-width: 900px) {
+    #pracovnaObsah h1 {
+      font-size: 3em !important;
+    }
+    
+  }
+
+  /* HORNÁ SPÁLŇA */
+
+  #hornaSpalnaObsah {
+    background-image: url("../images/bg.jpg");
+    min-height: 100vh;
+    background-size: cover;
+  }
+  #hornaSpalnaObsah h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+  }
+  #hornaSpalnaObsah p {
+    font-size: 1.3em;
+  }
+  #hornaSpalnaObsah h2 {
+    font-size: 2.5em;
+  }
+  #spalnaHSvetlo img {
+    height: 120px;
+  }
+  #spalnaHSatnikSvetlo img {
+    height: 120px;
+  }
+  #hornaSpalnaObsah #spalnaHRoleta .img {
+    height: 120px;
+  }
+  #hornaSpalnaObsah .btnYellowEvent {
+    pointer-events: none;
+    background-color: rgb(219, 199, 19) !important;
+    border: none;
+  }
+  @media only screen and (max-width: 900px) {
+    #hornaSpalnaObsah h1 {
+      font-size: 3em !important;
+    }
+    
+  }
+
+  /* DOLNÁ SPÁLŇA */
+
+  #dolnaSpalnaObsah {
+    background-image: url("../images/bg.jpg");
+    min-height: 100vh;
+    background-size: cover;
+  }
+  #dolnaSpalnaObsah h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+  }
+  #dolnaSpalnaObsah p {
+    font-size: 1.3em;
+  }
+  #dolnaSpalnaObsah h2 {
+    font-size: 2.5em;
+  }
+  #spalnaDSvetlo img {
+    height: 120px;
+  }
+  #spalnaDRoleta .img {
+    height: 120px;
+  }
+  #dolnaSpalnaObsah .btnYellowEvent {
+    pointer-events: none;
+    background-color: rgb(219, 199, 19) !important;
+    border: none;
+  }
+  @media only screen and (max-width: 900px) {
+    #dolnaSpalnaObsah h1 {
+      font-size: 3em !important;
+    }
+    
+  }
+
+  /* HORNÁ CHODBA */
+
+  #hornaChodbaObsah {
+    background-image: url("../images/bg.jpg");
+    min-height: 100vh;
+    background-size: cover;
+  }
+  #hornaChodbaObsah h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+  }
+  #hornaChodbaObsah img {
+    height: 120px;
+  }
+  @media only screen and (max-width: 900px) {
+    #hornaChodbaObsah h1 {
+      font-size: 3em !important;
+    }
+    
+  }
+
+  /* DOLNÁ CHODBA */
+
+  #dolnaChodbaObsah {
+    background-image: url("../images/bg.jpg");
+    min-height: 100vh;
+    background-size: cover;
+  }
+  #dolnaChodbaObsah h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+  }
+  #dolnaChodbaObsah p {
+    font-size: 1.3em;
+  }
+  #dolnaChodbaObsah h2 {
+    font-size: 2.2em;
+  }
+  #dolnaChodbaObsah img {
+    height: 120px;
+  }
+  #dolnaChodbaObsah .btnBlueEvent {
+    pointer-events: none;
+    background-color: #34c1d3 !important;
+    border: none;
+  }
+  @media only screen and (max-width: 900px) {
+    #dolnaChodbaObsah h1 {
+      font-size: 3em !important;
+    }
+    
+  }
+
+  /* DETSKÁ IZBA */
+
+  #detskaIzbaObsah {
+    background-image: url("../images/bg.jpg");
+    min-height: 100vh;
+    background-size: cover;
+  }
+  #detskaIzbaObsah h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+  }
+  #detskaIzbaObsah .img {
+    height: 120px;
+  }
+  @media only screen and (max-width: 900px) {
+    #detskaIzbaObsah h1 {
+      font-size: 3em !important;
+    }
+    
+  }
+
+  /* HORNÁ KÚPELŇA */
+
+  #hornaKupelnaObsah {
+    background-image: url("../images/bg.jpg");
+    min-height: 100vh;
+    background-size: cover;
+  }
+  #hornaKupelnaObsah h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+  }
+  #hornaKupelnaObsah img {
+    height: 120px;
+  }
+  @media only screen and (max-width: 900px) {
+    #hornaKupelnaObsah h1 {
+      font-size: 3em !important;
+    }
+    
+  }
+
+  /* DOLNÁ KÚPELŇA */
+
+  #dolnaKupelnaObsah {
+    background-image: url("../images/bg.jpg");
+    min-height: 100vh;
+    background-size: cover;
+  }
+  #dolnaKupelnaObsah h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+  }
+  #dolnaKupelnaObsah img {
+    height: 120px;
+  }
+  @media only screen and (max-width: 900px) {
+    #dolnaKupelnaObsah h1 {
+      font-size: 3em !important;
+    }
+    
+  }
